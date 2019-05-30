@@ -44,7 +44,7 @@ class Referee : AbstractReferee() {
     theRandom = (params["seed"] as? String)?.let { Random(it.toLong()) } ?: Random()
 
 //    when (3) {
-    when (gameManager.leagueLevel) {
+    when (7) {
       1 -> {
         Leagues.mines = false; Leagues.fixedIncome = WOOD_FIXED_INCOME; Leagues.towers = false; Leagues.giants = false
         Leagues.obstacles = OBSTACLE_PAIRS.sample()
